@@ -1,0 +1,12 @@
+[Member.member1]
+Type = "rust"
+Target = "wasm"
+Cache = true
+OutDir = "./dist/member1"
+
+[Member.member2]
+Type = "go"
+EntryPoint = "cmd/cli/main.go"
+Cache = true
+OutDir = "./dist/member2"
+Options = { Build = "echo Hello world!", Dev = "" }
